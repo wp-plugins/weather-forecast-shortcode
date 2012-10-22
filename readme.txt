@@ -42,7 +42,7 @@ Visit <a href="http://www.yr.no/">yr.no</a> and <em>search for the desired place
 = Other parameters to include in [yr] when needed =
 
 * banner (0/1) (show logo/banner from yr.no)
-* text (0/1) (only for Norway and in Norwegian lnaguage)
+* text (0/1) (only for Norway and in Norwegian language)
 * links (0/1) (show links to other weather data for this place)
 * table (1/0) (show the forecast table, default on)
 * maxage (seconds, defaults to 20 minutes, for efficient caching)
