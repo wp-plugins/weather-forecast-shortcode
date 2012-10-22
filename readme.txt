@@ -12,13 +12,13 @@ Registers a shortcode for fetching weather forecast from yr.no
 
 == Description ==
 
-Weather forecast from yr.no, delivered by the Norwegian Meteorological Institute and the NRK.
-Creates a shortcode to display a weather forecast for a place (or city) as a table on any page or post.
-It covers over <strong>9 million places</strong> all over the world, including 900 000 places in Norway.
-Based on the free weather data and follows the terms and conditions stated by yr.no.
-More info at <a href="http://om.yr.no/verdata/free-weather-data/">yr.no</a>.
+Weather forecast from yr.no, delivered by the Norwegian Meteorological Institute and the NRK (National Norwegian public broadcasting company).
+Creates a shortcode [yr] to display a weather forecast for a place (or city) as a table on any page or post, based on url fethed from yr.no.
+It therefore covers over <strong>9 million places</strong> all over the world, including 900 000 places in Norway alone.
+Based on the free weather data and follows the terms and conditions stated by <a href="http://om.yr.no/verdata/free-weather-data/">yr.no</a>.
 
-Uses `yr.php` version 2.6 by <a href="mailto:lennart.andre.rolland@nrk.no">Lennart André Rolland</a>.
+It uses an updated edition of the original script <a href="http://www.yr.no/contentfile/file/1.5542944!php-varsel_versjon_2-5.zip">`yr.php`</a> v 2.6
+by <a href="mailto:lennart.andre.rolland@nrk.no">Lennart André Rolland</a> at NRK.
 
 == Installation ==
 
@@ -32,16 +32,30 @@ Uses `yr.php` version 2.6 by <a href="mailto:lennart.andre.rolland@nrk.no">Lenna
 
 = Usage examples =
 
-Visit <a href="http://www.yr.no/">yr.no</a> and search for the desired place. Copy the url. In your post/page type
+Visit <a href="http://www.yr.no/">yr.no</a> and <em>search for the desired place</em>. Copy the url. In your post/page type
+[yr url="paste the url here" name="Optional display name of the place"]. Like this:
 
-* [yr url="http://www.yr.no/place/Norway/Oslo/Oslo/Oslo" name="Oslo"]
+* [yr url="http://www.yr.no/place/Norway/Oslo/Oslo/Oslo"]
 * [yr url="http://www.yr.no/place/United_States/New_York/Times_Square~5141023" name="Times Square"]
 * [yr name="Ao Nang" url="http://www.yr.no/sted/Thailand/Krabi/Ao_Nang"]
 
+= Other parameters to include when needed=
+
+* banner= (0/1) (show logo/banner from yr.no)
+* text= (0/1) (only for Norway and in Norwegian lnaguage)
+* links (0/1) (show links to other weather data for this place)
+* table (1/0) (show the forecast table, default on)
+* maxage (seconds, defaults to 20 minutes, for efficient caching)
+* timeout (max seconds to wait for yr.no, defaults to 10)
+
+= Caching =
+
+This plugin will create a subdirectory in the plugin folder named `cache` to store files between retrieves from yr.no
+
 == Screenshots ==
 
-1. English display (shown when the url is retrieved on the English edition at yr.no)
-2. Norwegian display (vises nå url er funnet på den norske utgaven av yr.no)
+1. English text (shown when the url is retrieved from the English edition at yr.no)
+2. Norsk tekst (vises nå url er funnet på den norske utgaven av yr.no)
 
 == Changelog ==
 
