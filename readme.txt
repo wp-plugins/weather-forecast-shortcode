@@ -12,10 +12,10 @@ Registers a shortcode for fetching weather forecast from yr.no
 
 == Description ==
 
-Weather forecast from yr.no, delivered by the Norwegian Meteorological Institute and the NRK (National Norwegian public broadcasting company).
-Creates a shortcode [yr] to display a weather forecast for a place (or city) as a table on any page or post, based on url fethed from yr.no.
-It therefore covers over <strong>9 million places</strong> all over the world, including 900 000 places in Norway alone.
-Based on the free weather data and follows the terms and conditions stated by <a href="http://om.yr.no/verdata/free-weather-data/">yr.no</a>.
+Weather forecasts from yr.no, delivered by the Norwegian Meteorological Institute (MI) and the Norwegian national public broadcasting company (NRK).
+Registers a shortcode [yr] to display a weather forecast for a place (or city) as a table on any page or post, based on url found manually on <a href="http://om.yr.no/">yr.no</a>.
+It covers more than <strong>9 million</strong> places all over the world, including about 900 000 places in Norway alone. Specific resorts and hotels included.
+This plugin is enturely based on free and public weather data, but follows the terms and conditions required by <a href="http://om.yr.no/verdata/free-weather-data/">yr.no</a>.
 
 It uses an updated edition of the original script <a href="http://www.yr.no/contentfile/file/1.5542944!php-varsel_versjon_2-5.zip">`yr.php`</a> v 2.6
 by <a href="mailto:lennart.andre.rolland@nrk.no">Lennart André Rolland</a> at NRK.
