@@ -4,6 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( '<!DOCTYPE html><html><body><h1>No direct access allowed</h1></body></html>' );
 }
 
+// Av Lennart André Rolland <lennart.andre.rolland@nrk.no>
 // Klasse for å vise data fra yr. Kompatibel med YRComms sin datastruktur
 class YRDisplay{
 

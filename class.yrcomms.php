@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	header( 'Status: 403 Forbidden', true, 403 );
 	exit( '<!DOCTYPE html><html><body><h1>No direct access allowed</h1></body></html>' );
 }
-
+// Av Lennart André Rolland <lennart.andre.rolland@nrk.no>
 // Klasse for lesing og tilrettelegging av YR data
 class YRComms{
 
