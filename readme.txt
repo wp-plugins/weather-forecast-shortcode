@@ -32,7 +32,7 @@ by <a href="mailto:lennart.andre.rolland@nrk.no">Lennart André Rolland</a> at N
 
 = Usage examples =
 
-Visit <a href="http://www.yr.no/">yr.no</a> and <em>search for the desired place</em>. Copy the url. In your post/page type
+Visit <a href="http://www.yr.no/">yr.no</a>, select your language and <em>search for the desired place</em>. Copy the url. In your post/page type
 [yr url="paste the url here" name="Optional display name of the place"]. Like this:
 
 * [yr url="http://www.yr.no/place/Norway/Oslo/Oslo/Oslo"]
