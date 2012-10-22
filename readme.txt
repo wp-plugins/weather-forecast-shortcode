@@ -39,10 +39,10 @@ Visit <a href="http://www.yr.no/">yr.no</a> and <em>search for the desired place
 * [yr url="http://www.yr.no/place/United_States/New_York/Times_Square~5141023" name="Times Square"]
 * [yr name="Ao Nang" url="http://www.yr.no/sted/Thailand/Krabi/Ao_Nang"]
 
-= Other parameters to include when needed=
+= Other parameters to include in [yr] when needed =
 
-* banner= (0/1) (show logo/banner from yr.no)
-* text= (0/1) (only for Norway and in Norwegian lnaguage)
+* banner (0/1) (show logo/banner from yr.no)
+* text (0/1) (only for Norway and in Norwegian lnaguage)
 * links (0/1) (show links to other weather data for this place)
 * table (1/0) (show the forecast table, default on)
 * maxage (seconds, defaults to 20 minutes, for efficient caching)
