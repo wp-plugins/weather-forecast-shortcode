@@ -1,4 +1,3 @@
-<<<<<<< .mine
 === Weather forecast shortcode ===
 Contributors: knutsp, ist@kreasjoner.com
 Donate link: http://om.yr.no/verdata/free-weather-data/
@@ -95,4 +94,3 @@ Visit [yr.no] (http://www.yr.no) and search for your place. Copy the url.
 
 = 0.1 =
 * Experimental.
->>>>>>> .r615562
