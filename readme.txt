@@ -18,7 +18,7 @@ It covers over <strong>9 million places</strong> all over the world, including 9
 Based on the free weather data and follows the terms and conditions stated by yr.no.
 More info at <a href="http://om.yr.no/verdata/free-weather-data/">yr.no</a>.
 
-Uses yr.php version 2.6 by [Lennart André Rolland] (mailto:lennart.andre.rolland@nrk.no)
+Uses `yr.php` version 2.6 by <a href="mailto:lennart.andre.rolland@nrk.no">Lennart André Rolland</a>.
 
 == Installation ==
 
@@ -32,7 +32,7 @@ Uses yr.php version 2.6 by [Lennart André Rolland] (mailto:lennart.andre.rollan
 
 = Usage examples =
 
-Visit [Yr] (http://www.yr.no/) and search for the desired place. Copy the url. In your post/page type
+Visit <a href="http://www.yr.no/">yr.no</a> and search for the desired place. Copy the url. In your post/page type
 
 * [yr url="http://www.yr.no/place/Norway/Oslo/Oslo/Oslo" name="Oslo"]
 * [yr url="http://www.yr.no/place/United_States/New_York/Times_Square~5141023" name="Times Square"]
