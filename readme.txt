@@ -18,7 +18,7 @@ It covers more than <strong>9 million</strong> places all over the world, includ
 This plugin is enturely based on free and public weather data, but follows the terms and conditions required by <a href="http://om.yr.no/verdata/free-weather-data/">yr.no</a>.
 
 It uses an updated edition of the original script <a href="http://www.yr.no/contentfile/file/1.5542944!php-varsel_versjon_2-5.zip">`yr.php`</a> v 2.6
-by <a href="mailto:lennart.andre.rolland@nrk.no">Lennart André Rolland</a> at NRK.
+by Lennart André Rolland at NRK in 2008.
 
 == Installation ==
 
