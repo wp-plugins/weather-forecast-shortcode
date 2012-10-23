@@ -1,5 +1,5 @@
 === Weather forecast shortcode ===
-Contributors: knutsp, ist@kreasjoner.com
+Contributors: knutsp, Egoist8
 Donate link: http://om.yr.no/verdata/free-weather-data/
 Tags: weather, shortcode
 Requires at least: 3.0.1
