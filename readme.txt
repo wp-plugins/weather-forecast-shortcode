@@ -1,7 +1,7 @@
 === Weather Forecast Shortcode ===
 Contributors: knutsp, Egoist8
 Donate link: http://om.yr.no/verdata/free-weather-data/
-Tags: weather, shortcode
+Tags: weather, shortcode, yr.no
 Requires at least: 3.0.1
 Tested up to: 3.5
 Stable tag: trunk
