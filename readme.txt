@@ -1,4 +1,4 @@
-=== Weather forecast shortcode ===
+=== Weather Forecast Shortcode ===
 Contributors: knutsp, Egoist8
 Donate link: http://om.yr.no/verdata/free-weather-data/
 Tags: weather, shortcode
