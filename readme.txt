@@ -39,16 +39,18 @@ Visit <a href="http://www.yr.no/">yr.no</a>, select your language and <em>search
 * [yr url="http://www.yr.no/place/United_States/New_York/Times_Square~5141023" name="Times Square"]
 * [yr name="Ao Nang" url="http://www.yr.no/sted/Thailand/Krabi/Ao_Nang"]
 
-= Other parameters to include in [yr] when needed =
+= Other parameters to include in [yr] when needed: =
 
-* banner (0/1) (show logo/banner from yr.no)
-* text (0/1) (only for Norway and in Norwegian language)
-* links (0/1) (show links to other weather data for this place)
-* table (1/0) (show the forecast table, default on)
-* maxage (seconds, defaults to 20 minutes, for efficient caching)
-* timeout (max seconds to wait for yr.no, defaults to 10)
+* `banner` (0/1) (show logo/banner from yr.no)
+* `text` (0/1) (only for Norway and in Norwegian language)
+* `links` (0/1) (show links to other weather data for this place)
+* `table` (1/0) (show the forecast table, default on)
+* `maxage` (seconds, defaults to 20 minutes, for efficient caching)
+* `timeout` (max seconds to wait for yr.no, defaults to 10)
 
 Example: [yr url="http://www.yr.no/place/Norway/Akershus/B%C3%A6rum/Sandvika" links="1" table="0" maxage="2" banner="1"]
+
+The only necessary parameter is `url` (but defaults to Oslo). If `name` is omitted it defaults to the last part of the url, like Sandvika in the above example.
 
 = Languages fully supported =
 
