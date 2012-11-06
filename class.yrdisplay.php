@@ -142,11 +142,11 @@ EOT
 		// Spytt ut
       if ( $this->lang=='nb' ) {
 		$this->ht.=<<<EOT
-      <p class="yr-lenker">$this->yr_name på yr.no:
-        <a href="$url/time_for_time.html" target="$target">Time for time</a>
-        <a href="$url/langtidsvarsel.html" target="$target">Langtidsvarsel</a>
-        <a href="$url/radar.html" target="$target">Radar</a>
-        <a href="$url/avansert_kart.html" target="$target">Avansert kart</a>
+      <p class="yr-lenker">Mer på yr.no:
+        <a href="$url/time_for_time.html" target="$target">Time for time</a> |
+        <a href="$url/langtidsvarsel.html" target="$target">Langtidsvarsel</a> |
+        <a href="$url/radar.html" target="$target">Radar</a> |
+        <a href="$url/avansert_kart.html" target="$target">Avansert kart</a> |
         <a href="$url/statistikk.html" target="$target">Været som var</a>
       </p>
 
@@ -154,12 +154,12 @@ EOT
 		;
 	  } else {
 		$this->ht.=<<<EOT
-      <p class="yr-lenker">$this->yr_name on yr.no:
-        <a href="$url/" target="$target">Overview</a>
-        <a href="$url/hour_by_hour.html" target="$target">Hour by hour</a>
-        <a href="$url/long.html" target="$target">Long term</a>
-        <a href="$url/radar.html" target="$target">Radar</a>
-        <a href="$url/advanced_map.html" target="$target">Advanced map</a>
+      <p class="yr-lenker">More on yr.no:
+        <a href="$url/" target="$target">Overview</a> |
+        <a href="$url/hour_by_hour.html" target="$target">Hour by hour</a> |
+        <a href="$url/long.html" target="$target">Long term</a> |
+        <a href="$url/radar.html" target="$target">Radar</a> |
+        <a href="$url/advanced_map.html" target="$target">Advanced map</a> |
         <a href="$url/statistics.html" target="$target">Statistics</a>
       </p>
 
