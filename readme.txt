@@ -28,7 +28,7 @@ by Lennart André Rolland at NRK in 2008.
 2. Upload `weather-forecast-shortcode` folder to the `/wp-content/plugins/` folder
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
-== Upgrade ==
+= Upgrade =
 
 IMPORTANT: If upgrade to new version from 1.2 or eralier fails, rename the folder `wp-content/plugins/weather-forecast-shortcode` to something else and reinstall the plugin.
 This problem should never happen again. Then try setting permission for the old `cache` subfolder to 755 and delete it through FTP. Otherwise shell access or support may delete it.
