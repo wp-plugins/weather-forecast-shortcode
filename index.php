@@ -6,7 +6,7 @@ Description: Weather forecast from yr.no, delivered by the Norwegian Meteorologi
 as a table on any page or post. It covers over <strong>9 million</strong> places all over the world, including 900 000 places in Norway. Based on the free weather data and follows the
 terms and conditions stated by yr.no. More info at <a href="http://om.yr.no/verdata/free-weather-data/">yr.no</a>.
 Author: Knut Sparhell and Lennart André Rolland
-Version: 1.1
+Version: 1.2
 Author URI: http://nytt-nettsted.no/om-oss/
 */
 

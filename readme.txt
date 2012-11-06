@@ -48,6 +48,8 @@ Visit <a href="http://www.yr.no/">yr.no</a>, select your language and <em>search
 * maxage (seconds, defaults to 20 minutes, for efficient caching)
 * timeout (max seconds to wait for yr.no, defaults to 10)
 
+Example: [yr url="http://www.yr.no/place/Norway/Akershus/B%C3%A6rum/Sandvika" links="1" table="0" maxage="2" banner="1"]
+
 = Languages fully supported =
 
 * English [en_US]
@@ -65,6 +67,12 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 2. Norsk tekst (vises nå url er funnet på den norske utgaven av yr.no)
 
 == Changelog ==
+
+= 1.2 =
+
+* Improved links separation for accessibility
+* Links supports English fully
+* Some title attribute and spacing improvements
 
 = 1.1 =
 
