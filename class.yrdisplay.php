@@ -100,14 +100,14 @@ EOT
       if ( $this->lang=='nb' ) {
 	  $this->ht.=<<<EOT
       <h2><a href="$url" target="$target">V&aelig;rvarsel for $this->yr_name</a></h2>
-      <p><a href="http://www.yr.no/" target="$target"><strong>V&aelig;rvarsel fra yr.no, levert av Meteorologisk institutt og NRK.</strong></a></p>
+      <p><a href="http://www.yr.no/" target="$target" title="Til yr.no for full værmelding"><strong>Værvarsel fra yr.no, levert av Meteorologisk institutt og NRK.</strong></a></p>
 
 EOT
       ;
 	  } else {
 	  $this->ht.=<<<EOT
       <h2><a href="$url" target="$target">Forecast for $this->yr_name</a></h2>
-      <p><a href="http://www.yr.no/" target="$target"><strong>Weather forecast from yr.no, delivered by the Norwegian Meteorological Institute and the NRK.</strong></a></p>
+      <p><a href="http://www.yr.no/" target="$target" title="To yr.no for complete forecast"><strong>Weather forecast from yr.no, delivered by the Norwegian Meteorological Institute and the NRK.</strong></a></p>
 
 EOT
       ;
@@ -140,16 +140,32 @@ EOT
 		// Rens url
 		$url=YRComms::convertEncodingEntities($this->yr_url);
 		// Spytt ut
+      if ( $this->lang=='nb' ) {
 		$this->ht.=<<<EOT
-      <p class="yr-lenker">$this->yr_name p&aring; yr.no:
-        <a href="$url/" target="$target">Varsel med kart</a>
+      <p class="yr-lenker">$this->yr_name på yr.no:
         <a href="$url/time_for_time.html" target="$target">Time for time</a>
-        <a href="$url/helg.html" target="$target">Helg</a>
         <a href="$url/langtidsvarsel.html" target="$target">Langtidsvarsel</a>
+        <a href="$url/radar.html" target="$target">Radar</a>
+        <a href="$url/avansert_kart.html" target="$target">Avansert kart</a>
+        <a href="$url/statistikk.html" target="$target">Været som var</a>
       </p>
 
 EOT
 		;
+	  } else {
+		$this->ht.=<<<EOT
+      <p class="yr-lenker">$this->yr_name on yr.no:
+        <a href="$url/" target="$target">Overview</a>
+        <a href="$url/hour_by_hour.html" target="$target">Hour by hour</a>
+        <a href="$url/long.html" target="$target">Long term</a>
+        <a href="$url/radar.html" target="$target">Radar</a>
+        <a href="$url/advanced_map.html" target="$target">Advanced map</a>
+        <a href="$url/statistics.html" target="$target">Statistics</a>
+      </p>
+
+EOT
+		;
+	  }
 	}
 
 	//Generer header for værdatatabellen
@@ -247,7 +263,7 @@ EOT
 				$winddirtext = $yr_var3['WINDDIRECTION'][0]['ATTRIBUTES']['NAME'];	// knutsp
 				$winddirtext = mb_convert_encoding( $winddirtext, 'UTF-8', 'UTF-8, ISO-8859-1' );	// knutsp
 				if ( $this->lang=='nb' )
-					$winddirtext = strtolower( $winddirtext );	// knutsp
+					$winddirtext = mb_convert_case( $winddirtext, MB_CASE_LOWER );	// knutsp
 				// Behandle temperatur
 				$temper=round($yr_var3['TEMPERATURE'][0]['ATTRIBUTES']['VALUE']);
 				if($temper>=0)$tempclass='pluss';
