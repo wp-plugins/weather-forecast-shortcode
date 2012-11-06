@@ -28,6 +28,11 @@ by Lennart André Rolland at NRK in 2008.
 2. Upload `weather-forecast-shortcode` folder to the `/wp-content/plugins/` folder
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
+== Upgrade ==
+
+IMPORTANT: If upgrade to new version from 1.2 or eralier fails, rename the folder `wp-content/plugins/weather-forecast-shortcode` to something else and reinstall the plugin.
+This problem should never happen again. Then try setting permission for the old `cache` subfolder to 755 and delete it through FTP. Otherwise shell access or support may delete it.
+
 == Frequently Asked Questions ==
 
 = Usage examples =
@@ -69,6 +74,10 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 2. Norsk tekst (vises nå url er funnet på den norske utgaven av yr.no)
 
 == Changelog ==
+
+= 1.3 =
+
+* Permissions on `cache` folder now set to 0600 to avoid upgrade problems
 
 = 1.2 =
 
