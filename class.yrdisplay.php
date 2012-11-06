@@ -160,11 +160,11 @@ EOT
       <table summary="V&aelig;rvarsel for $name fra yr.no">
         <thead>
           <tr>
-            <th class="v" colspan="3"><strong>Varsel for $name</strong></th>
-            <th>Nedb&oslash;r</th>
-            <th>Temp.</th>
-            <th class="v">Vind</th>
-            <th>Vindstyrke</th>
+            <th scope="col" class="v" colspan="3"><strong>Varsel for $name</strong>&nbsp;</th>
+            <th scope="col">Nedbør&nbsp;</th>
+            <th scope="col">Temp.</th>
+            <th scope="col" class="v">Vind</th>
+            <th scope="col">Vindstyrke</th>
           </tr>
         </thead>
         <tbody>
@@ -176,11 +176,11 @@ EOT
       <table summary="Forecast for $name from yr.no">
         <thead>
           <tr>
-            <th class="v" colspan="3"><strong>Forecast for $name</strong></th>
-            <th>Precip.</th>
-            <th>Temp.</th>
-            <th class="v">Wind</th>
-            <th>speed</th>
+            <th scope="col" class="v" colspan="3"><strong>Forecast for $name</strong>&nbsp;</th>
+            <th scope="col">Precip.</th>
+            <th scope="col">Temp.</th>
+            <th scope="col" class="v">Wind</th>
+            <th scope="col">speed</th>
           </tr>
         </thead>
         <tbody>
@@ -238,11 +238,16 @@ EOT
 					if($rain<1)$rain='&lt;1';
 					else $rain=round($rain);
 				}
-				$rain.=" mm";
+				$rain.="&nbsp;mm";
 				// Behandle vind
 				$winddir=round($yr_var3['WINDDIRECTION'][0]['ATTRIBUTES']['DEG']/22.5);
-				$winddirtext=$this->yr_vindrettninger[$winddir];
-				$winddirtext = strtolower(utf8_encode($yr_var3['WINDDIRECTION'][0]['ATTRIBUTES']['NAME']));	// knutsp
+//				$winddirtext=$this->yr_vindrettninger[$winddir];
+//				$winddirtext = strtolower(utf8_encode($yr_var3['WINDDIRECTION'][0]['ATTRIBUTES']['NAME']));	// knutsp
+				
+				$winddirtext = $yr_var3['WINDDIRECTION'][0]['ATTRIBUTES']['NAME'];	// knutsp
+				$winddirtext = mb_convert_encoding( $winddirtext, 'UTF-8', 'UTF-8, ISO-8859-1' );	// knutsp
+				if ( $this->lang=='nb' )
+					$winddirtext = strtolower( $winddirtext );	// knutsp
 				// Behandle temperatur
 				$temper=round($yr_var3['TEMPERATURE'][0]['ATTRIBUTES']['VALUE']);
 				if($temper>=0)$tempclass='pluss';
@@ -264,9 +269,9 @@ EOT
             <th>$fromtime&#8211;$totime</th>
             <td><img src="$this->yr_imgpath/$imgvar.png" width="38" height="38" alt="$s" /></td>
             <td>$rain</td>
-            <td class="$tempclass">$temper &deg;C</td>
+            <td class="$tempclass">$temper&nbsp;&deg;C</td>
             <td class="v">$w $from $winddirtext</td>
-            <td>$r m/s</td>
+            <td>$r&nbsp;m/s</td>
           </tr>
 
 EOT

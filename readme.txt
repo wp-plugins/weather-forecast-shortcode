@@ -48,6 +48,13 @@ Visit <a href="http://www.yr.no/">yr.no</a>, select your language and <em>search
 * maxage (seconds, defaults to 20 minutes, for efficient caching)
 * timeout (max seconds to wait for yr.no, defaults to 10)
 
+= Languages fully supported =
+
+* English [en_US]
+* Norwegian (bokmål) [nb_NO]
+
+Other languages available on yr.no will work, somewhat mixed with English text
+
 = Caching =
 
 This plugin will create a subdirectory in the plugin folder named `cache` to store files between retrieves from yr.no
@@ -58,6 +65,14 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 2. Norsk tekst (vises nå url er funnet på den norske utgaven av yr.no)
 
 == Changelog ==
+
+= 1.1 =
+
+* Improved character set handling and conversion for UTF-8 versus ISO-8859-1.
+* Added a non-breaking space between:
+** rain value and mm unit
+** wind value and m/s unit
+** temeprature value and degrees unit sign
 
 = 1.0 =
 * Initial release.
