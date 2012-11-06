@@ -70,9 +70,9 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 
 * Improved character set handling and conversion for UTF-8 versus ISO-8859-1.
 * Added a non-breaking space between:
-** rain value and mm unit
-** wind value and m/s unit
-** temeprature value and degrees unit sign
+	* rain value and mm unit
+	* wind value and m/s unit
+	* temeprature value and degrees unit sign
 
 = 1.0 =
 * Initial release.
