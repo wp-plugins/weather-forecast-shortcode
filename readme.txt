@@ -79,7 +79,7 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 
 = 1.3 =
 
-* Permissions on `cache` folder now set to 0666 to avoid upgrade problems
+* Permissions on `cache` folder now set to `0664` to avoid upgrade problems.
 
 = 1.2 =
 
