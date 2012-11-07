@@ -77,9 +77,14 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 
 == Changelog ==
 
+= 1.4 =
+
+* Consolidating folder permissions and a few dosumentation typo fixes
+* Apology for the upgrade problems due to failure to delete the plugin folder with the sticky `cache` subfolder
+
 = 1.3 =
 
-* Permissions on `cache` folder now set to `0664` to avoid upgrade problems.
+* Permissions on `cache` folder now set to `0664` to avoid upgrade problems
 
 = 1.2 =
 
