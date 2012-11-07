@@ -93,7 +93,7 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 * Added a non-breaking space between:
 	* rain value and `mm` unit
 	* wind value and `m/s` unit
-	* temeprature value and `&deg;C` unit sign
+	* temeprature value and `˚C` unit sign
 
 = 1.0 =
 * Initial release.
