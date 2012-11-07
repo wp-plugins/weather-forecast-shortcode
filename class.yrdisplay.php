@@ -334,7 +334,7 @@ EOT
 			rmdir($yr_datadir);
 		}
 		// Create new cache folder with correct permissions
-		if(!is_dir($yr_datadir))mkdir($yr_datadir,0664);
+		if(!is_dir($yr_datadir))mkdir($yr_datadir,0764);
 	}
 
 
