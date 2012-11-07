@@ -32,7 +32,7 @@ For upgrade problems, see Installation tab.
 
 = Upgrade =
 
-<strong>IMPORTANT:</strong> If upgrade to new version from 1.2 or eaelier fails, rename the folder `wp-content/plugins/weather-forecast-shortcode` to something else and reinstall the plugin.
+<strong>IMPORTANT:</strong> If upgrade to new version from 1.2 or earlier fails, rename the folder `wp-content/plugins/weather-forecast-shortcode` to something else and reinstall the plugin.
 This problem should never happen again. Then try setting permission for the old `cache` subfolder to 755 and delete it through FTP. Otherwise shell access or support may delete it.
 
 == Frequently Asked Questions ==
