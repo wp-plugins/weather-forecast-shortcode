@@ -20,6 +20,8 @@ This plugin is enturely based on free and public weather data, but follows the t
 It uses an updated edition of the original script <a href="http://www.yr.no/contentfile/file/1.5542944!php-varsel_versjon_2-5.zip">`yr.php`</a> v 2.6
 by Lennart André Rolland at NRK in 2008.
 
+For upgrade problems, see Installation tab.
+
 == Installation ==
 
 = Manual =
