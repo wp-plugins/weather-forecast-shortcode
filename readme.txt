@@ -12,7 +12,7 @@ Registers a shortcode for fetching weather forecast from yr.no
 
 == Description ==
 
-Weather forecasts from yr.no, delivered by the Norwegian Meteorological Institute (MI) and the Norwegian national public broadcasting company (NRK).
+Weather forecasts from `yr.no`, delivered by the Norwegian Meteorological Institute (MI) and the Norwegian national public broadcasting company (NRK).
 Registers a shortcode `[yr]` to display a weather forecast for a place (or city) as a table on any page or post, based on url found manually on <a href="http://om.yr.no/">yr.no</a>.
 It covers more than <strong>9 million</strong> places all over the world, including about 900 000 places in Norway alone. Specific resorts and hotels included.
 This plugin is enturely based on free and public weather data, but follows the terms and conditions required by <a href="http://om.yr.no/verdata/free-weather-data/">`yr.no`</a>.
@@ -20,7 +20,7 @@ This plugin is enturely based on free and public weather data, but follows the t
 It uses an updated edition of the original script <a href="http://www.yr.no/contentfile/file/1.5542944!php-varsel_versjon_2-5.zip">`yr.php`</a> v 2.6
 by Lennart André Rolland at NRK in 2008.
 
-For upgrade problems, see Installation tab.
+For upgrade problems, see 'Installation' tab.
 
 == Installation ==
 
@@ -33,14 +33,14 @@ For upgrade problems, see Installation tab.
 = Upgrade =
 
 <strong>IMPORTANT:</strong> If upgrade to new version from 1.2 or earlier fails, rename the folder `wp-content/plugins/weather-forecast-shortcode` to something else and reinstall the plugin.
-This problem should never happen again. Then try setting permission for the old `cache` subfolder to 755 and delete it through FTP. Otherwise shell access or support may delete it.
+This problem should never happen again. Then try setting permission for the old `cache` subfolder to `755` and delete it through FTP. Otherwise try shell access or support may delete it.
 
 == Frequently Asked Questions ==
 
 = Usage examples =
 
 Visit <a href="http://www.yr.no/">`yr.no`</a>, select your language and <em>search for the desired place</em>. Copy the url. In your post/page type
-`[yr url="paste the url here" name="Optional display name of the place"]`. Like this:
+`[yr url="paste the url here" name="Optional display name of the place"]`. Or like this:
 
 * `[yr url="http://www.yr.no/place/Norway/Oslo/Oslo/Oslo"]`
 * `[yr url="http://www.yr.no/place/United_States/New_York/Times_Square~5141023" name="Times Square"]`
@@ -53,7 +53,7 @@ Visit <a href="http://www.yr.no/">`yr.no`</a>, select your language and <em>sear
 * `links` (0/1) (show links to other weather data for this place)
 * `table` (1/0) (show the forecast table, default on)
 * `maxage` (seconds, defaults to 20 minutes, for efficient caching)
-* `timeout` (max seconds to wait for yr.no, defaults to 10)
+* `timeout` (seconds, maximum time to wait for response from `yr.no`, defaults to 10)
 
 Example: `[yr url="http://www.yr.no/place/Norway/Akershus/B%C3%A6rum/Sandvika" links="1" table="0" maxage="2" banner="1"]`
 
@@ -83,9 +83,9 @@ This plugin will create a subdirectory in the plugin folder named `cache` to sto
 
 = 1.2 =
 
-* Improved links separation for accessibility
+* Improved `links` separation for accessibility
 * Links supports English fully
-* Some title attribute and spacing improvements
+* Some `title`  attribute and spacing improvements
 
 = 1.1 =
 
